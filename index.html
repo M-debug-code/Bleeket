@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleeket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#market">Marketplace</a></li>
+                <li><a href="#battle">Battle Arena</a></li>
+                <li><a href="#craft">Crafting</a></li>
+            </ul>
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-area">
+            <div id="home" class="page">
+                <h1>Welcome to Bleeket</h1>
+                <p id="game-description">A game where you collect, trade, and battle with Bleeks!</p>
+                <button id="start-button">Start Game</button>
+                <div id="game-output"></div>
+                <div id="player-stats">
+                    <p><strong>Coins:</strong> <span id="coins">0</span></p>
+                    <p><strong>Health:</strong> <span id="health">100</span></p>
+                </div>
+            </div>
+
+            <!-- Marketplace Page -->
+            <div id="market" class="page">
+                <h2>Marketplace</h2>
+                <p>Buy and sell Bleeks!</p>
+                <button id="buy-bleek">Buy a Bleek</button>
+                <p id="market-output"></p>
+            </div>
+
+            <!-- Battle Arena Page -->
+            <div id="battle" class="page">
+                <h2>Battle Arena</h2>
+                <p>Prepare for battle with your Bleeks!</p>
+                <button id="start-battle">Start Battle</button>
+                <div id="battle-output"></div>
+            </div>
+
+            <!-- Crafting Page -->
+            <div id="craft" class="page">
+                <h2>Crafting</h2>
+                <p>Combine materials to craft new Bleeks!</p>
+                <button id="craft-bleek">Craft Bleek</button>
+                <div id="craft-output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
